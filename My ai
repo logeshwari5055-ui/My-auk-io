@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My AI Website</title>
+</head>
+
+<body>
+<h1>Welcome to My AI Website</h1>
+<p>Ask me anything!</p>
+
+<input type="text" placeholder="Ask a question">
+<button>Search</button>
+
+</body>
+</html>
