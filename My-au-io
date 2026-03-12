@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ask Anything</title>
 
+<style>
+body{
+font-family: Arial;
+text-align: center;
+background:#f2f2f2;
+padding:40px;
+}
+
+h1{
+color:#333;
+}
+
+input{
+width:70%;
+padding:12px;
+font-size:16px;
+}
+
+button{
+padding:12px 20px;
+font-size:16px;
+background:#4CAF50;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+#answer{
+margin-top:20px;
+font-size:18px;
+color:#222;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Ask Me Anything</h1>
+
+<input id="question" placeholder="Type your question here">
+<br><br>
+
+<button onclick="answerQuestion()">Ask</button>
+
+<p id="answer"></p>
+
+<script>
+function answerQuestion(){
+
+let q=document.getElementById("question").value.toLowerCase();
+let a="I don't know the answer yet.";
+
+if(q.includes("capital of india")){
+a="The capital of India is New Delhi.";
+}
+
+else if(q.includes("2+2")){
+a="2 + 2 = 4";
+}
+
+else if(q.includes("who discovered gravity")){
+a="Isaac Newton discovered gravity.";
+}
+
+else if(q.includes("largest planet")){
+a="The largest planet is Jupiter.";
+}
+
+document.getElementById("answer").innerText=a;
+
+}
+</script>
+
+</body>
+</html>
